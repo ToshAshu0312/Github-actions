@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: printing world name
-        runs: echo "hello world"
+        run: echo "hello world"
       - name: checkout
         uses: actions/checkout@v03
   deploying:
-    runs: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: printing
-        runs: echo "deploying"
+        run: echo "deploying"
