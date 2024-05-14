@@ -1,0 +1,15 @@
+name: second-workflow
+on: [push , workflow_dispatch]
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing world name
+        runs: echo "hello world"
+      - name: checkout
+        uses: actions/checkout@v03
+  deploying:
+    runs: ubuntu-latest
+    steps:
+      - name: printing
+        runs: echo "deploying"
