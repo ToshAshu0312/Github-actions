@@ -1,0 +1,8 @@
+name: Third action
+on: workflow_dispatch
+jobs:
+  Output:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Output metadata
+      run: echo "${{ toJSON(github) }}"
