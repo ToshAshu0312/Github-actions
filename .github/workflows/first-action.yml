@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: print hello world
         run: | 
-        echo "HELLO WORLD!!!"
-        echo "Hello there again!!"
+          echo "HELLO WORLD!!!"
+          echo "Hello there again!!"
       - name: print bye world
         run: echo "BYE WORLD!!!"
