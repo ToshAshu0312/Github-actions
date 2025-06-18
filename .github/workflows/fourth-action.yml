@@ -1,0 +1,13 @@
+name: Parallel executing and multiple triggers
+on: [push, workflow_dispatch]
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing hello world
+        run: echo "Hello World!"
+  deploying:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploying
+        run: echo "Deploying"
